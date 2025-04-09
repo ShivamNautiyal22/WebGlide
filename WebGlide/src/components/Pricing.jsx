@@ -6,7 +6,7 @@ const Pricing = () => {
   const pricingPlans = [
     {
       name: "Basic Website",
-      price: "29,999",
+      price: "9999",
       description: "Perfect for small business websites",
       features: [
         { text: "5-Page Professional Website", available: true },
@@ -19,13 +19,14 @@ const Pricing = () => {
         { text: "Advanced Features", available: false },
         { text: "Database Integration", available: false },
         { text: "User Authentication", available: false },
+        { text: "AI Integration", available: false }
       ],
       buttonText: "Start Project",
       popular: false,
     },
     {
       name: "Business Website",
-      price: "79,999",
+      price: "17999",
       description: "Website with custom features",
       features: [
         { text: "10-Page Dynamic Website", available: true },
@@ -38,13 +39,14 @@ const Pricing = () => {
         { text: "Advanced Features", available: true },
         { text: "Database Integration", available: false },
         { text: "User Authentication", available: false },
+        { text: "AI Integration", available: false }
       ],
       buttonText: "Start Project",
       popular: true,
     },
     {
       name: "Web Application",
-      price: "1,49,999",
+      price: "29999",
       description: "Full-featured web application",
       features: [
         { text: "Custom Web Application", available: true },
@@ -57,6 +59,7 @@ const Pricing = () => {
         { text: "Advanced Features", available: true },
         { text: "Database Integration", available: true },
         { text: "User Authentication", available: true },
+        { text: "AI Integration", available: true }
       ],
       buttonText: "Start Project",
       popular: false,
