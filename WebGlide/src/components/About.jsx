@@ -30,7 +30,7 @@ const About = () => {
   ];
   return (
     <section className="px-5 w-full text-white">
-      <div className="py-15 max-w-[1440px] mx-auto ">
+      <div className="py-18 max-w-[1440px] mx-auto ">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-cyan-500 mb-10">
             Meet the Founders
@@ -54,11 +54,11 @@ const About = () => {
             .
           </p>
         </div>
-        <div className=" grid grid-cols-2 place-items-center w-[70%] mx-auto">
+        <div className=" grid grid-cols-1  place-items-center w-full sm:grid-cols-1 gap-28 lg:grid-cols-2 lg:w-[85%] xl:w-[70%] lg:gap-2 mx-auto">
           {ProfileCard.map(
             ({ Image, Name, title, Quote, Portfolio, Github }, index) => {
               return (
-                <div className=" w-[400px] bg-gray-800 py-2 px-4 relative rounded-2xl">
+                <div className="w-[90%] sm:w-[400px] bg-gray-800 py-2 px-4 relative rounded-2xl">
                   <div className="max-h-[130px] max-w-[130px] mx-auto absolute  left-[50%] translate-[-50%] ">
                     <img src={Image} alt={Name} className="rounded-full" />
                   </div>

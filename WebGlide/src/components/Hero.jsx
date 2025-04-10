@@ -2,8 +2,8 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="pt-20 px-5">
-      <div className=" min-h-screen relative overflow-hidden">
+    <section className="pt-20">
+      <div className=" min-h-screen relative overflow-hidden px-5">
         {/* Animated background elements */}
 
         <div className="absolute inset-0 z-[-1]">
@@ -14,7 +14,7 @@ const Hero = () => {
         {/* Main content */}
         <div className="text-white h-[80vh] flex items-center justify-center">
           <div>
-            <h1 className="text-center text-6xl mb-4">
+            <h1 className="text-center text-[35px] sm:text-5xl md:text-6xl mb-4 leading-14 md:leading-18">
               <span className="text-cyan-400">Affordable</span> Websites ,{" "}
               <span className="text-cyan-400">Premium</span> Vibes.
             </h1>
