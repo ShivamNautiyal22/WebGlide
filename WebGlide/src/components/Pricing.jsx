@@ -1,5 +1,5 @@
 import React from "react";
-import { FaReact, FaShoppingCart, FaCode, FaCheck, FaTimes } from 'react-icons/fa'
+import { FaCheck, FaTimes } from 'react-icons/fa'
 
 
 const Pricing = () => {
@@ -67,8 +67,8 @@ const Pricing = () => {
   ];
 
   return (
-    <section  className="px-5 pb-10 w-full">
-      <div className="py-16 max-w-[1440px] mx-auto">
+    <section  className="px-5 w-full">
+      <div className="py-10 max-w-[1440px] mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-cyan-500 mb-4">Project Investment Plans</h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
@@ -76,7 +76,7 @@ const Pricing = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
           {pricingPlans.map((plan, index) => (
             <div 
               key={index}
