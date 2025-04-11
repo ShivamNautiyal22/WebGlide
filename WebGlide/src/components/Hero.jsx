@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from 'react-router-dom';
+
 
 const Hero = () => {
   return (
@@ -23,9 +25,9 @@ const Hero = () => {
               reliable, and budget-friendly.
             </p>
             <div className="flex justify-center">
-              <button className="cursor-pointer hover:scale-110 duration-250 bg-cyan-600 py-2 px-4 text-xl rounded-[5px]">
+              <Link to= "/contact" className="cursor-pointer hover:scale-110 duration-250 bg-cyan-600 py-2 px-4 text-xl rounded-[5px]">
                 Get Started
-              </button>
+              </Link>
             </div>
           </div>
         </div>

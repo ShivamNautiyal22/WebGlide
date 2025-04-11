@@ -1,6 +1,6 @@
 import React from "react";
 import { FaCheck, FaTimes } from 'react-icons/fa'
-
+import {Link} from "react-router-dom"
 
 const Pricing = () => {
   const pricingPlans = [
@@ -118,15 +118,15 @@ const Pricing = () => {
                   </li>
                 ))}
               </ul>
-              <button
-                className={`w-full py-3 px-6 rounded-lg font-semibold transition-colors mt-auto ${
+              <Link to="/contact"
+                className={`w-full py-3 px-6 text-center rounded-lg font-semibold transition-colors mt-auto ${
                   plan.popular
                     ? 'bg-cyan-500 text-white hover:bg-cyan-600'
                     : 'bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-600'
                 }`}
               >
                 {plan.buttonText}
-              </button>
+              </Link>
             </div>
           ))}
         </div>

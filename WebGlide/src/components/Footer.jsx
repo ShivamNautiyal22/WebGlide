@@ -21,9 +21,9 @@ const Footer = () => {
         <div className="my-6 space-y-2 sm:flex sm:gap-8">
          {
             navList.map((item) => {
-              return  <div className="cursor-pointer hover:underline w-max">
+              return  <a className="cursor-pointer hover:underline w-max">
                     {item}
-                </div>
+                </a>
             })
          }
         </div>
