@@ -24,9 +24,9 @@ const Navbar = () => {
                 className="hover:bg-cyan-800 hover:text-white py-[6px] cursor-pointer px-3 rounded-[5px] duration-300"
               >
                 {item === "Contact" ? (
-                  <Link to="/contact">{item}</Link> // Routing only for Contact
+                  <Link to="/contact">{item}</Link> 
                 ) : (
-                  <span>{item}</span> // Just plain text, no link
+                  <span>{item}</span> 
                 )}
               </li>
             ))}
