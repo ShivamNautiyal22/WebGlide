@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './components/Navbar'
+import Header from './components/Header'
 import Hero from './components/Hero'
 import Services from './components/Services'
 import Pricing from './components/Pricing'
@@ -18,7 +18,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={
           <>
-          <Navbar />
+          <Header />
             <Hero />
             <Services />
             <Pricing />

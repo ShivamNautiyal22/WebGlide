@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
-    <section className="pt-20">
+    <section id="home" className="pt-20">
       <div className=" min-h-screen relative overflow-hidden px-5">
         {/* Animated background elements */}
 

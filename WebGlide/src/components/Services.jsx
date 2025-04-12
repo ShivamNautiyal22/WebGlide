@@ -42,7 +42,7 @@ const Services = () => {
   ]
 
   return (
-    <section className="px-5 pb-10 w-full">
+    <section id="Services" className="px-5 pb-10 w-full">
       <div className="text-white max-w-[1440px] mx-auto">
         <Heading Heading="Services" />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

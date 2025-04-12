@@ -36,19 +36,19 @@ const About = () => {
             Meet the Founders
           </h2>
           <p className="text-base text-gray-600 dark:text-gray-300 max-w-[92%] mx-auto mb-30">
-            Welcome to <span class="text-cyan-400 ">Webglide</span> – where
+            Welcome to <span className="text-cyan-400 ">Webglide</span> – where
             ideas take flight and brands come to life! Founded by{" "}
-            <span class="text-cyan-400 ">Shivam Nautiyal</span> and
-            <span class="text-cyan-400 ">Aditya Kumar</span>,
-            <span class="text-cyan-400 ">Webglide</span> is a creative digital
+            <span className="text-cyan-400 ">Shivam Nautiyal</span> and
+            <span className="text-cyan-400 ">Aditya Kumar</span>,
+            <span className="text-cyan-400 ">Webglide</span> is a creative digital
             studio passionate about building beautiful, responsive, and
             impactful websites. Whether you're a
-            <span class="text-cyan-400 ">startup dreaming big</span> or a brand
+            <span className="text-cyan-400 ">startup dreaming big</span> or a brand
             looking to refresh its online identity, we’re here to craft a unique
             digital presence tailored to your vision. With a strong focus on
             design, performance, and user experience, we turn your ideas into
             smooth, engaging web experiences that
-            <span class="text-cyan-400 ">
+            <span className="text-cyan-400 ">
               glide your brand into the spotlight
             </span>
             .
@@ -58,7 +58,7 @@ const About = () => {
           {ProfileCard.map(
             ({ Image, Name, title, Quote, Portfolio, Github }, index) => {
               return (
-                <div className="w-[90%] sm:w-[400px] bg-gray-800 py-2 px-4 relative rounded-2xl">
+                <div key={index} className="w-[90%] sm:w-[400px] bg-gray-800 py-2 px-4 relative rounded-2xl">
                   <div className="max-h-[130px] max-w-[130px] mx-auto absolute  left-[50%] translate-[-50%] ">
                     <img src={Image} alt={Name} className="rounded-full" />
                   </div>
