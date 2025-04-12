@@ -8,7 +8,7 @@ const Footer = () => {
     <section className=" w-full">
       <div className="py-7 px-5 text-white max-w-[1440px] mx-auto bg-gray-800">
         <div>
-          <h1 className="text-3xl mb-4">
+          <h1 className="text-3xl mb-4 font-bold">
             Web<span className="text-cyan-500">Glide.</span>
           </h1>
           <p className="text-sm text-gray-400 w-[90%]">
