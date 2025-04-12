@@ -16,7 +16,7 @@ const Hero = () => {
         {/* Main content */}
         <div className="text-white h-[80vh] flex items-center justify-center">
           <div>
-            <h1 className="text-center text-[35px] sm:text-5xl md:text-6xl mb-4 leading-14 md:leading-18">
+            <h1 className="text-center text-[35px] sm:text-5xl md:text-6xl mb-4 leading-14 md:leading-18 font-bold">
               <span className="text-cyan-400">Affordable</span> Websites ,{" "}
               <span className="text-cyan-400">Premium</span> Vibes.
             </h1>

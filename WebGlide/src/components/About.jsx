@@ -38,16 +38,16 @@ const About = () => {
           <p className="text-base text-gray-600 dark:text-gray-300 max-w-[92%] mx-auto mb-30">
             Welcome to <span className="text-cyan-400 ">Webglide</span> – where
             ideas take flight and brands come to life! Founded by{" "}
-            <span className="text-cyan-400 ">Shivam Nautiyal</span> and
-            <span className="text-cyan-400 ">Aditya Kumar</span>,
+            <span className="text-cyan-400 ">Shivam Nautiyal</span> and 
+            <span className="text-cyan-400 ">Aditya Kumar</span>, 
             <span className="text-cyan-400 ">Webglide</span> is a creative digital
             studio passionate about building beautiful, responsive, and
-            impactful websites. Whether you're a
+            impactful websites. Whether you're a 
             <span className="text-cyan-400 ">startup dreaming big</span> or a brand
             looking to refresh its online identity, we’re here to craft a unique
             digital presence tailored to your vision. With a strong focus on
             design, performance, and user experience, we turn your ideas into
-            smooth, engaging web experiences that
+            smooth, engaging web experiences that 
             <span className="text-cyan-400 ">
               glide your brand into the spotlight
             </span>

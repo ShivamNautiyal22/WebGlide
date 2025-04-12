@@ -15,7 +15,7 @@ const Header = () => {
         <div className="text-white max-w-[1440px] mx-auto flex items-center justify-between">
           {/* logo */}
           <div>
-            <h1 className="text-3xl">
+            <h1 className="text-3xl font-bold">
               Web<span className="text-cyan-500">Glide.</span>
             </h1>
           </div>

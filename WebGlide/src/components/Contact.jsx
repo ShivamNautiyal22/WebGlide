@@ -22,7 +22,7 @@ const Contact = () => {
         </div>
         <div className="text-white absolute top-0 left-0 z-20 w-full  px-5 sm:px-0">
           <form className="flex justify-center">
-            <div className="mt-20 ">
+            <div className="mt-25 ">
               <div className="flex gap-6 mb-3">
                 <label htmlFor="Fname">
                   <h1 className="mb-1">First Name</h1>
