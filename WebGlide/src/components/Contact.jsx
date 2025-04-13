@@ -4,15 +4,14 @@ import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
-    <section className="w-full h-screen overflow-hidden relative ">
-      <div className="max-w-[1440px] mx-auto">
+    <section className=" mx-auto h-screen  relative ">
+      <div className=" mx-auto">
         <div className="relative">
-          <img
-            src="/contact.jpg"
-            alt="contact"
-            className="w-full h-screen object-cover object-center"
-          />
-          <div className="h-screen w-full bg-[#1212126a] absolute z-1 top-0 left-0"></div>
+         <div>
+          <div className="w-70 h-70 absolute top-20 left-60 bg-violet-500/30 filter blur-3xl rounded-full"></div>
+          <div className="w-70 h-70 absolute top-90 right-30 bg-cyan-500/40 filter blur-3xl rounded-full"></div>
+         </div>
+          <div className=" bg-[#1212126a] absolute z-1 top-0 left-0"></div>
         </div>
         <div className="text-white absolute top-0 float-end w-full z-92">
           <Link to= "/" className=" mt-2 mr-5 flex items-center float-end gap-2 cursor-pointer border-2 rounded-full px-3 py-1 hover:bg-white hover:text-black duration-350">
@@ -22,7 +21,7 @@ const Contact = () => {
         </div>
         <div className="text-white absolute top-0 left-0 z-20 w-full  px-5 sm:px-0">
           <form className="flex justify-center">
-            <div className="mt-25 ">
+            <div className="my-25 ">
               <div className="flex gap-6 mb-3">
                 <label htmlFor="Fname">
                   <h1 className="mb-1">First Name</h1>
