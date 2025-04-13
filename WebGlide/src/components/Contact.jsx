@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
-    <section className=" mx-auto h-screen  relative ">
+    <section className=" mx-auto h-screen overflow-x-hidden  relative ">
       <div className=" mx-auto">
         <div className="relative">
          <div>
