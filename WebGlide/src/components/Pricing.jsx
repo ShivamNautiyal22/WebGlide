@@ -70,7 +70,7 @@ const Pricing = () => {
     <section id="Pricing" className="px-5 w-full">
       <div className="py-10 max-w-[1440px] mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-cyan-500 mb-4 font-semibold">Project Investment Plans</h2>
+          <h2 className="text-4xl font-bold text-cyan-500 mb-4 ">Project Investment Plans</h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             Choose the perfect solution for your web development needs
           </p>
