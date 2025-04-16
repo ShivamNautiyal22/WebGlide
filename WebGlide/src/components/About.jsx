@@ -5,6 +5,7 @@ import {
   AiOutlineGlobal,
   AiOutlineGithub,
   AiOutlineMail,
+  AiFillStar
 } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";
 
@@ -31,9 +32,17 @@ const About = () => {
     <section className="px-5 w-full text-white">
       <div className="py-18 max-w-[1440px] mx-auto ">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-cyan-500 mb-10">
-            Meet the Founders
-          </h2>
+        <div className="mb-6">
+            <div className="flex items-center justify-center gap-4 mb-2">
+              <div className="h-[1px] w-20 bg-cyan-400"></div>
+              <AiFillStar className="text-cyan-400 text-2xl" />
+              <h2 className="text-5xl font-bold text-white">
+                Meet the Founders
+              </h2>
+              <AiFillStar className="text-cyan-400 text-2xl" />
+              <div className="h-[1px] w-20 bg-cyan-400"></div>
+            </div>
+          </div>
           <p className="text-base text-gray-600 dark:text-gray-300 max-w-[92%] mx-auto mb-30">
             Welcome to <span className="text-cyan-400 ">Webglide</span> – where
             ideas take flight and brands come to life! Founded by{" "}
