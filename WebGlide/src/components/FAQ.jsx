@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { Element } from "react-scroll";
 
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -69,7 +70,7 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="w-full bg-[#121212]">
+    <Element name="faq's" className="w-full bg-[#121212]">
       <div className="py-7 px-5 text-white max-w-[1440px] mx-auto">
         <h2 className="text-5xl font-bold text-center my-10 text-cyan-400">
           FAQ's
@@ -107,7 +108,7 @@ const FAQ = () => {
           ))}
         </div>
       </div>
-    </section>
+    </Element>
   );
 };
 

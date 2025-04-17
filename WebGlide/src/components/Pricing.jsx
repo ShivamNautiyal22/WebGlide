@@ -1,6 +1,7 @@
 import React from "react";
 import { FaCheck, FaTimes } from 'react-icons/fa'
 import {Link} from "react-router-dom"
+import { Element } from "react-scroll";
 
 const Pricing = () => {
   const pricingPlans = [
@@ -67,7 +68,7 @@ const Pricing = () => {
   ];
 
   return (
-    <section id="Pricing" className="px-5 w-full">
+    <Element name="pricing" id="Pricing" className="px-5 w-full">
       <div className="py-10 max-w-[1440px] mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-cyan-500 mb-4 ">Project Investment Plans</h2>
@@ -131,7 +132,7 @@ const Pricing = () => {
           ))}
         </div>
       </div>
-    </section>
+    </Element>
   );
 };
 

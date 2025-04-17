@@ -1,13 +1,19 @@
 import React, { useState } from "react";
 import { CgMenuRight } from "react-icons/cg";
 import { IoClose } from "react-icons/io5";
-import { Link } from 'react-router-dom';
-// import { Link } from "react-scroll";
-
+import { Link } from "react-router-dom";
+import { Link as Move } from "react-scroll";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const navList = ["Home", "Services", "Pricing", "FAQ's", "About"];
+  // const navList = ["Home", "Services", "Pricing", "FAQ's", "About"];
+  const navList = [
+    { name: "Home", to: "home" },
+    { name: "Services", to: "services" },
+    { name: "Pricing", to: "pricing" },
+    { name: "FAQ's", to: "faq's" },
+    { name: "About", to: "about" },
+  ];
 
   return (
     <>
@@ -15,28 +21,38 @@ const Header = () => {
         <div className="text-white max-w-[1440px] mx-auto flex items-center justify-between">
           {/* logo */}
           <div>
-            <h1 className="text-3xl font-bold">
+            <Move
+              smooth={true}
+              duration={500}
+              to="home"
+              className="text-3xl font-bold cursor-pointer"
+            >
               Web<span className="text-cyan-500">Glide.</span>
-            </h1>
+            </Move>
           </div>
 
           {/* desktop */}
           <div className="hidden lg:block">
             <ul className="flex items-center gap-2 text-[19px]">
-              {navList.map((item, index) => (
-                <li
+              {navList.map((nav, index) => (
+                <Move
+                  to={nav.to}
                   key={index}
+                  smooth={true}
+                  duration={500}
                   className="hover:bg-cyan-800 hover:text-white py-[6px] cursor-pointer px-3 rounded-[5px] duration-300"
                 >
-                  {item}
-                </li>
+                  {nav.name}
+                </Move>
               ))}
             </ul>
           </div>
 
           {/* button */}
           <div className="bg-cyan-600 py-[7px] px-3 rounded-[5px] text-[17px] cursor-pointer hover:bg-cyan-700 hover:shadow-cyan-600 duration-200 hidden lg:block">
-            <Link to="/contact" className="cursor-pointer">Get Started</Link>
+            <Link to="/contact" className="cursor-pointer">
+              Get Started
+            </Link>
           </div>
 
           {/* mobile menu button */}
@@ -45,11 +61,7 @@ const Header = () => {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-white focus:outline-none cursor-pointer"
             >
-              {isMenuOpen ? (
-                <IoClose size={30} />
-              ) : (
-                <CgMenuRight size={30} />
-              )}
+              {isMenuOpen ? <IoClose size={30} /> : <CgMenuRight size={30} />}
             </button>
           </div>
         </div>
@@ -80,17 +92,19 @@ const Header = () => {
         <div className="flex flex-col pt-20 px-4">
           <ul className="space-y-4">
             {navList.map((item, index) => (
-              <li
+              <Move
                 key={index}
+                to={item.to}
                 className="text-white text-lg hover:bg-cyan-800 py-2 px-4 rounded-md transition-colors duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
-               {item}
-              </li>
+                {item.name}
+              </Move>
             ))}
           </ul>
           <div className="mt-8">
-            <Link to="/contact"
+            <Link
+              to="/contact"
               className="block bg-cyan-600 text-white text-center py-3 px-4 rounded-md hover:bg-cyan-700 transition-colors duration-200"
               onClick={() => setIsMenuOpen(false)}
             >

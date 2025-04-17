@@ -1,6 +1,7 @@
 import React from "react";
 import { FaRocket, FaPalette, FaCode } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { Element } from "react-scroll";
 
 const Hero = () => {
   const features = [
@@ -22,7 +23,7 @@ const Hero = () => {
   ];
 
   return (
-    <section id="home" className="relative overflow-hidden pt-20">
+    <Element id="home" className="relative overflow-hidden pt-20">
       {/* Animated background elements */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-20 left-20 w-72 h-72 bg-cyan-500/20 rounded-full filter blur-3xl animate-pulse"></div>
@@ -75,7 +76,7 @@ const Hero = () => {
           ))}
         </div>
       </div>
-    </section>
+    </Element>
   );
 };
 

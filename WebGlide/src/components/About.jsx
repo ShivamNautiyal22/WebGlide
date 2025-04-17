@@ -8,6 +8,7 @@ import {
   AiFillStar
 } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";
+import { Element } from "react-scroll";
 
 const About = () => {
   const ProfileCard = [
@@ -29,7 +30,7 @@ const About = () => {
     },
   ];
   return (
-    <section className="px-5 w-full text-white">
+    <Element name="about" className="px-5 w-full text-white">
       <div className="py-18 max-w-[1440px] mx-auto ">
         <div className="text-center mb-16">
         <div className="mb-6">
@@ -97,7 +98,7 @@ const About = () => {
           )}
         </div>
       </div>
-    </section>
+    </Element>
   );
 };
 

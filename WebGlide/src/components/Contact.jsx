@@ -7,18 +7,18 @@ const Contact = () => {
     <section className=" mx-auto h-screen overflow-x-hidden  relative ">
       <div className=" mx-auto">
         <div className="relative">
-         <div>
-          <div className="w-70 h-70 absolute top-20 left-60 bg-violet-500/30 filter blur-3xl rounded-full"></div>
-          <div className="w-70 h-70 absolute top-90 right-30 bg-cyan-500/40 filter blur-3xl rounded-full"></div>
-         </div>
+          <div>
+            <div className="w-70 h-70 absolute top-20 left-60 bg-violet-500/30 filter blur-3xl rounded-full"></div>
+            <div className="w-70 h-70 absolute top-90 right-30 bg-cyan-500/40 filter blur-3xl rounded-full"></div>
+          </div>
           <div className=" bg-[#1212126a] absolute z-1 top-0 left-0"></div>
         </div>
-        <div className="text-white absolute top-0 float-end w-full z-92">
+        {/* <div className="text-white absolute top-0 float-end w-full z-92">
           <Link to= "/" className=" mt-2 mr-5 flex items-center float-end gap-2 cursor-pointer border-2 rounded-full px-3 py-1 hover:bg-white hover:text-black duration-350">
             <FaHome className="text-[18px] mb-[2px]" />
             <h1 className="text-[18px]">Home</h1>
           </Link>
-        </div>
+        </div> */}
         <div className="text-white absolute top-0 left-0 z-20 w-full  px-5 sm:px-0">
           <form className="flex justify-center">
             <div className="my-25 ">
@@ -90,6 +90,7 @@ const Contact = () => {
                   <textarea
                     name="message"
                     id="message"
+                    rows={4}
                     className="border-2 focus:outline-none w-full py-2 px-3 rounded-[8px]"
                     placeholder="Type what's in your mind"
                   ></textarea>
@@ -101,6 +102,9 @@ const Contact = () => {
               >
                 Submit
               </button>
+              <div className="text-end mt-1">
+                <Link to= "/" className="text-[14px] text-gray-300 underline  cursor-pointer">Return back to home</Link>
+              </div>
             </div>
           </form>
         </div>
