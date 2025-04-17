@@ -20,12 +20,18 @@ const Contact = () => {
           </Link>
         </div> */}
         <div className="text-white absolute top-0 left-0 z-20 w-full  px-5 sm:px-0">
-          <form className="flex justify-center">
+          <form
+            action="https://formsubmit.co/snautiyal881@gmail.com"
+            method="POST"
+            className="flex justify-center"
+          >
             <div className="my-25 ">
               <div className="flex gap-6 mb-3">
                 <label htmlFor="Fname">
                   <h1 className="mb-1">First Name</h1>
                   <input
+                  required
+                    name="First Name"
                     type="text"
                     id="Fname"
                     className="border-2 focus:outline-none w-full py-2 px-3 rounded-[8px]"
@@ -35,6 +41,8 @@ const Contact = () => {
                 <label htmlFor="Lname">
                   <h1 className="mb-1">Last Name</h1>
                   <input
+                  required
+                    name="Last Name"
                     type="text"
                     id="Lname"
                     className="border-2 focus:outline-none w-full py-2 px-3 rounded-[8px]"
@@ -46,6 +54,8 @@ const Contact = () => {
                 <label htmlFor="email">
                   <h1 className="mb-1">Email</h1>
                   <input
+                  required
+                    name="Email"
                     type="email"
                     id="email"
                     className="border-2 focus:outline-none w-full py-2 px-3 rounded-[8px]"
@@ -57,6 +67,8 @@ const Contact = () => {
                 <label htmlFor="phone">
                   <h1 className="mb-1">Phone</h1>
                   <input
+                  required
+                    name="Number"
                     type="number"
                     id="phone"
                     className="border-2 focus:outline-none w-full no-spinner py-2 px-3 rounded-[8px]"
@@ -68,6 +80,7 @@ const Contact = () => {
                 <label htmlFor="plan">
                   <h1 className="mb-1">Select Plan</h1>
                   <select
+                    name="Plan Choosen"
                     id="plan"
                     className="border-2 focus:outline-none w-full py-2 px-3 rounded-[8px]"
                     defaultValue="Professional"
@@ -103,7 +116,12 @@ const Contact = () => {
                 Submit
               </button>
               <div className="text-end mt-1">
-                <Link to= "/" className="text-[14px] text-gray-300 underline  cursor-pointer">Return back to home</Link>
+                <Link
+                  to="/"
+                  className="text-[14px] text-gray-300 underline  cursor-pointer"
+                >
+                  Return back to home
+                </Link>
               </div>
             </div>
           </form>
