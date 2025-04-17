@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const navList = ["Home", "Services", "Pricing", "About", "Contact"];
+  const navList = ["Home", "Services", "Pricing", "FAQ's", "About"];
 
   return (
     <>
@@ -28,11 +28,7 @@ const Header = () => {
                   key={index}
                   className="hover:bg-cyan-800 hover:text-white py-[6px] cursor-pointer px-3 rounded-[5px] duration-300"
                 >
-                  {item === "Contact" ? (
-                    <Link to="/contact">{item}</Link>
-                  ) : (
-                    <span>{item}</span>
-                  )}
+                  {item}
                 </li>
               ))}
             </ul>
@@ -89,17 +85,12 @@ const Header = () => {
                 className="text-white text-lg hover:bg-cyan-800 py-2 px-4 rounded-md transition-colors duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
-                {item === "Contact" ? (
-                  <Link to="/contact">{item}</Link>
-                ) : (
-                  <span>{item}</span>
-                )}
+               {item}
               </li>
             ))}
           </ul>
           <div className="mt-8">
-            <Link
-              to="/contact"
+            <Link to="/contact"
               className="block bg-cyan-600 text-white text-center py-3 px-4 rounded-md hover:bg-cyan-700 transition-colors duration-200"
               onClick={() => setIsMenuOpen(false)}
             >

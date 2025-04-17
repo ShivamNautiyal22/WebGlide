@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { FaRocket, FaPalette, FaCode } from "react-icons/fa";
-import { BiSolidQuoteAltLeft } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const features = [
@@ -33,7 +32,7 @@ const Hero = () => {
 
       <div className="relative z-10 px-4 sm:px-6 lg:px-8 py-20 max-w-7xl mx-auto">
         <div className="text-center space-y-8 mb-16">
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold text-white tracking-tight leading-12 sm:leading-20">
+          <h1 className="text-[44px] sm:text-5xl md:text-7xl font-extrabold text-white tracking-tight leading-14 sm:leading-20">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
               Affordable
             </span>{" "}
@@ -43,7 +42,7 @@ const Hero = () => {
             </span>{" "}
             Quality
           </h1>
-          <p className="max-w-[80%] mx-auto text-xl text-gray-300">
+          <p className="sm:max-w-[80%] mx-auto text-xl text-gray-300">
             Transform your online presence with stunning, high-performance
             websites that don't break the bank. Stand out from the crowd with
             our expert web solutions.

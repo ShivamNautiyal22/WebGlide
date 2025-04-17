@@ -3,7 +3,7 @@ import { PiCopyrightFill } from "react-icons/pi";
 import { Link } from 'react-router-dom';
  
 const Footer = () => {
-    const navList = ["Home", "Services", "Pricing", "About", "Contact"];
+    const navList = ["Home", "Services", "Pricing", "FAQ's", "About"];
   return (
     <section className="w-full bg-gray-800">
     <div className="py-7 px-5 text-white max-w-[1440px] mx-auto">

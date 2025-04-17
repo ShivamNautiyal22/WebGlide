@@ -1,0 +1,150 @@
+[33mcommit 9760e6c191ec476be8679dfe4605c81599dbf730[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: ShivamNautiyal22 <snautiyal881@gmail.com>
+Date:   Wed Apr 16 17:17:35 2025 +0530
+
+    updating the UI of about and hero
+
+[33mcommit e1d419fa9e4f7eb74c6f6864cf7a96640779475d[m
+Author: ShivamNautiyal22 <snautiyal881@gmail.com>
+Date:   Wed Apr 16 14:46:19 2025 +0530
+
+    update footer
+
+[33mcommit 071fcea6617e5e3b21ee02fe166b4c26643b744d[m
+Author: ShivamNautiyal22 <snautiyal881@gmail.com>
+Date:   Tue Apr 15 14:27:31 2025 +0530
+
+    minor mistake in naming updated
+
+[33mcommit 75f068059648bea89d82199ab8d26c5bc25253d9[m
+Author: ShivamNautiyal22 <snautiyal881@gmail.com>
+Date:   Tue Apr 15 14:13:39 2025 +0530
+
+    add loading bar
+
+[33mcommit bf4d1b596c09b483f3b0537dffbabce849fa1ed1[m
+Author: ShivamNautiyal22 <snautiyal881@gmail.com>
+Date:   Tue Apr 15 13:23:40 2025 +0530
+
+    update about section paragrapph
+
+[33mcommit ea9305bb3c5a4c882b10b0b2fdf8c21a7279d7d8[m
+Author: ShivamNautiyal22 <snautiyal881@gmail.com>
+Date:   Tue Apr 15 13:19:39 2025 +0530
+
+    update redirects file
+
+[33mcommit 5b72f6c85e8a799cf4e19fb690dc474ddfde1409[m
+Author: ShivamNautiyal22 <snautiyal881@gmail.com>
+Date:   Mon Apr 14 17:13:11 2025 +0530
+
+    fix some errors
+
+[33mcommit 6d783e6175f87b808cfbd5f0fa34a55dd9c31131[m
+Author: ShivamNautiyal22 <snautiyal881@gmail.com>
+Date:   Mon Apr 14 17:11:51 2025 +0530
+
+    adding _redirects file into public
+
+[33mcommit c8351b70d3bf3eed1d4b23e8f0f51f6c3287f9e5[m
+Author: ShivamNautiyal22 <snautiyal881@gmail.com>
+Date:   Sun Apr 13 10:06:24 2025 +0530
+
+    overflow hidden x for contact
+
+[33mcommit a986b4977abf20f0ac5b7d0120af3458636e743b[m
+Author: ShivamNautiyal22 <snautiyal881@gmail.com>
+Date:   Sun Apr 13 10:02:09 2025 +0530
+
+    update contact page and its bg
+
+[33mcommit fde964fa31c1d421f0b6124dd9ceb96702e36648[m
+Author: ShivamNautiyal22 <snautiyal881@gmail.com>
+Date:   Sat Apr 12 14:46:05 2025 +0530
+
+    update font weight in some sections and update spaces between the texts
+
+[33mcommit a352d05bbe4acaba44f558bbf05d28aa3b0e225b[m
+Author: ShivamNautiyal22 <snautiyal881@gmail.com>
+Date:   Sat Apr 12 14:39:38 2025 +0530
+
+    bold the footer logo
+
+[33mcommit 3797df2c4260758d8a288dc169a731ce16a7fe22[m
+Merge: ec9d593 187f6c4
+Author: ShivamNautiyal22 <snautiyal881@gmail.com>
+Date:   Sat Apr 12 14:31:56 2025 +0530
+
+    update readme
+
+[33mcommit ec9d593f0e8071b9b7d147d929913b3d1ce1fd5a[m
+Author: ShivamNautiyal22 <snautiyal881@gmail.com>
+Date:   Sat Apr 12 14:27:46 2025 +0530
+
+    change navbar to header and also updates minor problems
+
+[33mcommit ceb8e0f9ff6b6192cec024c231a7a7cf0d4967f9[m
+Author: ShivamNautiyal22 <snautiyal881@gmail.com>
+Date:   Fri Apr 11 15:05:18 2025 +0530
+
+    remvoe uneccessary comments
+
+[33mcommit 187f6c433bb7706d1baf5e3da37dac8eb2c7d574[m
+Author: Shivam Nautiyal <148831329+ShivamNautiyal22@users.noreply.github.com>
+Date:   Fri Apr 11 14:59:20 2025 +0530
+
+    Update README.md
+
+[33mcommit a604e3c4c331aa96679121372f5584af008be173[m
+Author: ShivamNautiyal22 <snautiyal881@gmail.com>
+Date:   Fri Apr 11 14:48:38 2025 +0530
+
+    Add contact and routing
+
+[33mcommit c766def34380a8c99d525f7edfba0bcb7d77846f[m
+Author: ShivamNautiyal22 <snautiyal881@gmail.com>
+Date:   Thu Apr 10 20:38:29 2025 +0530
+
+    add footer and update hero navbar and about section to make responsive
+
+[33mcommit 59e831fbd0f2358b9272f874a31fc97dd6f98eb9[m
+Author: ShivamNautiyal22 <snautiyal881@gmail.com>
+Date:   Thu Apr 10 16:02:52 2025 +0530
+
+    add about section and update prinicing page
+
+[33mcommit acf12c56f9b78915d143a5eb098d51ac8f48359a[m
+Author: ShivamNautiyal22 <snautiyal881@gmail.com>
+Date:   Wed Apr 9 16:17:24 2025 +0530
+
+    update princing section with ai integration
+
+[33mcommit 950baba9d1368b01968c0ef5c3e216ee5b827ec3[m
+Author: ShivamNautiyal22 <snautiyal881@gmail.com>
+Date:   Wed Apr 9 15:37:46 2025 +0530
+
+    Add service and princing page
+
+[33mcommit a68e16702be3c54fefbc3bc298b378941cb3a51d[m
+Author: ShivamNautiyal22 <snautiyal881@gmail.com>
+Date:   Tue Apr 8 15:05:46 2025 +0530
+
+    made navbar for desktop
+
+[33mcommit 192664583a764cebafd76b137b74b3cc427bc8a7[m
+Author: ShivamNautiyal22 <snautiyal881@gmail.com>
+Date:   Sun Apr 6 19:59:30 2025 +0530
+
+    add tailwind css
+
+[33mcommit 40566be04d38b00ba8c6e9e5e04da8e180d29117[m
+Author: ShivamNautiyal22 <snautiyal881@gmail.com>
+Date:   Sun Apr 6 19:56:22 2025 +0530
+
+    add readme file
+
+[33mcommit ba3268bd64442d685e331d2dda009377ace9579f[m
+Author: ShivamNautiyal22 <snautiyal881@gmail.com>
+Date:   Sun Apr 6 19:53:59 2025 +0530
+
+    Add initial files

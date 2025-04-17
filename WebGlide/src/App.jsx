@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Loading from "./components/Loading";
+import FAQ from "./components/FAQ";
 
 const App = () => {
 
@@ -38,8 +39,10 @@ const App = () => {
                 <Hero />
                 <Services />
                 <Pricing />
+                <FAQ />
                 <About />
                 <Footer />
+                
               </>
             }
           />

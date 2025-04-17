@@ -36,7 +36,7 @@ const About = () => {
             <div className="flex items-center justify-center gap-4 mb-2">
               <div className="h-[1px] w-20 bg-cyan-400"></div>
               <AiFillStar className="text-cyan-400 text-2xl" />
-              <h2 className="text-5xl font-bold text-white">
+              <h2 className="text-5xl font-bold text-cyan-400">
                 Meet the Founders
               </h2>
               <AiFillStar className="text-cyan-400 text-2xl" />
