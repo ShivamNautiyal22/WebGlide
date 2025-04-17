@@ -84,7 +84,7 @@ const FAQ = () => {
                 className="w-full px-4 py-3 text-left flex justify-between items-center"
                 onClick={() => toggleItem(index)}
               >
-                <span className="font-medium text-[19px] flex-1">
+                <span className="font-bold text-[19px] flex-1">
                   {item.title}
                 </span>
                 {activeIndex === index ? (
@@ -99,7 +99,7 @@ const FAQ = () => {
                   activeIndex === index
                     ? "max-h-[500px] py-3 opacity-100"
                     : "max-h-0 opacity-0"
-                } text-cyan-200`}
+                } text-cyan-100`}
               >
                 {item.content}
               </div>
