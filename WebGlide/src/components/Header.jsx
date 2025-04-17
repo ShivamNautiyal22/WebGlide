@@ -90,7 +90,7 @@ const Header = () => {
         </button>
 
         <div className="flex flex-col pt-20 px-4">
-          <ul className="space-y-4">
+          <ul className="space-y-4 flex flex-col">
             {navList.map((item, index) => (
               <Move
                 key={index}
