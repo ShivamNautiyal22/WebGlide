@@ -21,7 +21,7 @@ const Contact = () => {
         </div> */}
         <div className="text-white absolute top-0 left-0 z-20 w-full  px-5 sm:px-0">
           <form
-            action="https://formsubmit.co/snautiyal881@gmail.com"
+            action="https://formsubmit.co/Snautiyal881@gmail.com"
             method="POST"
             className="flex justify-center"
           >
