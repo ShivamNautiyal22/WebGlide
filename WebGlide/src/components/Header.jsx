@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { CgMenuRight } from "react-icons/cg";
 import { IoClose } from "react-icons/io5";
 import { Link } from "react-router-dom";
@@ -6,7 +6,8 @@ import { Link as Move } from "react-scroll";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  // const navList = ["Home", "Services", "Pricing", "FAQ's", "About"];
+  const [scrolled, setScrolled] = useState(false);
+  
   const navList = [
     { name: "Home", to: "home" },
     { name: "Services", to: "services" },
@@ -15,53 +16,64 @@ const Header = () => {
     { name: "About", to: "about" },
   ];
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
-      <nav className="w-full border-b-1 border-gray-700 fixed top-0 z-50 backdrop-blur-2xl py-4 px-5">
-        <div className="text-white max-w-[1440px] mx-auto flex items-center justify-between">
-          {/* logo */}
-          <div>
+      <nav className={`fixed w-full top-0 z-50 transition-all duration-300 ${
+        scrolled 
+          ? "py-4 bg-gray-900/20 shadow-2xl backdrop-blur-2xl"
+          : "py-4 bg-transparent"
+      }`}>
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between">
+            {/* Logo */}
             <Move
+              to="home"
               smooth={true}
               duration={500}
-              to="home"
-              className="text-3xl font-bold cursor-pointer"
+              className="text-2xl md:text-3xl font-bold text-white cursor-pointer transition-all duration-300 hover:scale-105"
             >
-              Web<span className="text-cyan-500">Glide.</span>
+              Web<span className="bg-gradient-to-r from-cyan-400 to-cyan-600 bg-clip-text text-transparent">Glide.</span>
             </Move>
-          </div>
 
-          {/* desktop */}
-          <div className="hidden lg:block">
-            <ul className="flex items-center gap-2 text-[19px]">
-              {navList.map((nav, index) => (
-                <Move
-                  to={nav.to}
-                  key={index}
-                  smooth={true}
-                  duration={500}
-                  className="hover:bg-cyan-800 hover:text-white py-[6px] cursor-pointer px-3 rounded-[5px] duration-300"
-                >
-                  {nav.name}
-                </Move>
-              ))}
-            </ul>
-          </div>
+            {/* Desktop Navigation */}
+            <div className="hidden lg:flex items-center space-x-1">
+              <ul className="flex items-center space-x-1">
+                {navList.map((nav, index) => (
+                  <Move
+                    key={index}
+                    to={nav.to}
+                    smooth={true}
+                    duration={500}
+                    className="relative px-4 py-2 text-gray-300 hover:text-white transition-colors duration-300 text-[17px] font-medium cursor-pointer group"
+                  >
+                    {nav.name}
+                    <span className="absolute bottom-0 left-0 w-full h-0.5 bg-cyan-500 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+                  </Move>
+                ))}
+              </ul>
+              <Link
+                to="/contact"
+                className="ml-6 px-6 py-2.5 bg-gradient-to-r from-cyan-500 to-cyan-600 text-white rounded-lg font-medium text-[15px] transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/30 hover:-translate-y-0.5 focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 focus:ring-offset-gray-900"
+              >
+                Get Started
+              </Link>
+            </div>
 
-          {/* button */}
-          <div className="bg-cyan-600 py-[7px] px-3 rounded-[5px] text-[17px] cursor-pointer hover:bg-cyan-700 hover:shadow-cyan-600 duration-200 hidden lg:block">
-            <Link to="/contact" className="cursor-pointer">
-              Get Started
-            </Link>
-          </div>
-
-          {/* mobile menu button */}
-          <div className="lg:hidden">
+            {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-white focus:outline-none cursor-pointer"
+              className="lg:hidden text-gray-300 hover:text-white focus:outline-none"
             >
-              {isMenuOpen ? <IoClose size={30} /> : <CgMenuRight size={30} />}
+              {isMenuOpen ? <IoClose size={28} /> : <CgMenuRight size={28} />}
             </button>
           </div>
         </div>
@@ -69,7 +81,7 @@ const Header = () => {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 bg-black bg-opacity-50 z-40 transition-opacity duration-300 lg:hidden ${
+        className={`fixed inset-0 bg-black/60 backdrop-blur-sm z-40 lg:hidden transition-opacity duration-300 ${
           isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
         onClick={() => setIsMenuOpen(false)}
@@ -77,35 +89,51 @@ const Header = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-full bg-gray-900 z-50 transform transition-transform duration-300 ease-in-out lg:hidden ${
+        className={`fixed top-0 right-0 h-full w-full max-w-sm bg-gray-900 z-50 transform transition-transform duration-500 ease-in-out lg:hidden ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        {/* Close button */}
-        <button
-          onClick={() => setIsMenuOpen(false)}
-          className="absolute top-6 right-6 text-white focus:outline-none cursor-pointer"
-        >
-          <IoClose size={30} />
-        </button>
+        <div className="flex flex-col h-full">
+          <div className="flex items-center justify-between p-6 border-b border-gray-800">
+            <Move
+              to="home"
+              smooth={true}
+              duration={500}
+              className="text-2xl font-bold text-white"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Web<span className="bg-gradient-to-r from-cyan-400 to-cyan-600 bg-clip-text text-transparent">Glide.</span>
+            </Move>
+            <button
+              onClick={() => setIsMenuOpen(false)}
+              className="text-gray-400 hover:text-white transition-colors duration-300"
+            >
+              <IoClose size={24} />
+            </button>
+          </div>
 
-        <div className="flex flex-col pt-20 px-4">
-          <ul className="space-y-4 flex flex-col">
-            {navList.map((item, index) => (
-              <Move
-                key={index}
-                to={item.to}
-                className="text-white text-lg hover:bg-cyan-800 py-2 px-4 rounded-md transition-colors duration-200"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {item.name}
-              </Move>
-            ))}
-          </ul>
-          <div className="mt-8">
+          <div className="flex-1 overflow-y-auto py-6 px-4">
+            <ul className="space-y-3">
+              {navList.map((item, index) => (
+                <li key={index}>
+                  <Move
+                    to={item.to}
+                    smooth={true}
+                    duration={500}
+                    className="block px-4 py-3 text-gray-300 hover:text-white hover:bg-gray-800/50 rounded-lg transition-colors duration-300"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Move>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="p-6 border-t border-gray-800">
             <Link
               to="/contact"
-              className="block bg-cyan-600 text-white text-center py-3 px-4 rounded-md hover:bg-cyan-700 transition-colors duration-200"
+              className="block w-full px-6 py-3 bg-gradient-to-r from-cyan-500 to-cyan-600 text-white rounded-lg font-medium text-center transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/30 hover:-translate-y-0.5"
               onClick={() => setIsMenuOpen(false)}
             >
               Get Started
