@@ -2,7 +2,7 @@ import React from "react";
 import { PiCopyrightFill } from "react-icons/pi";
 import { Link } from "react-router-dom";
 import { Link as Move } from "react-scroll";
-import { FaGithub, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaInstagram, FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   const navList = [
@@ -14,10 +14,8 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: <FaGithub size={20} />, href: "#" },
-    { icon: <FaTwitter size={20} />, href: "#" },
-    { icon: <FaLinkedin size={20} />, href: "#" },
-    { icon: <FaInstagram size={20} />, href: "#" },
+    { icon: <FaFacebook size={30} />, href: "https://www.facebook.com/profile.php?id=61574969296710" },
+    { icon: <FaInstagram size={30} />, href: "https://www.instagram.com/webglide_/" },
   ];
 
   return (
@@ -37,6 +35,7 @@ const Footer = () => {
                 <a
                   key={index}
                   href={link.href}
+                  target="_blank"
                   className="text-gray-400 hover:text-cyan-400 transition-colors duration-300"
                 >
                   {link.icon}
