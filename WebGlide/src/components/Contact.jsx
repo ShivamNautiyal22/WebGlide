@@ -13,12 +13,6 @@ const Contact = () => {
           </div>
           <div className=" bg-[#1212126a] absolute z-1 top-0 left-0"></div>
         </div>
-        {/* <div className="text-white absolute top-0 float-end w-full z-92">
-          <Link to= "/" className=" mt-2 mr-5 flex items-center float-end gap-2 cursor-pointer border-2 rounded-full px-3 py-1 hover:bg-white hover:text-black duration-350">
-            <FaHome className="text-[18px] mb-[2px]" />
-            <h1 className="text-[18px]">Home</h1>
-          </Link>
-        </div> */}
         <div className="text-white absolute top-0 left-0 z-20 w-full  px-5 sm:px-0">
           <form
             action="https://formsubmit.co/9cf0533373b5849c9e31c70a46343184"

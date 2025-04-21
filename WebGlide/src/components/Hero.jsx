@@ -1,29 +1,33 @@
-import React from "react";
+import React, { use } from "react";
 import { FaRocket, FaPalette, FaCode } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { Element } from "react-scroll";
+import { ThemeContext } from "./Theme";
 
 const Hero = () => {
+
+  const {theme} = use(ThemeContext)
+
   const features = [
     {
-      icon: <FaRocket className="text-4xl text-cyan-400" />,
+      icon: <FaRocket className={`text-4xl ${theme === "Dark"? "text-cyan-400": "text-blue-500" } transition-all duration-[800ms] ease-in-out`} />,
       title: "Lightning Fast",
       description: "Optimized for speed and performance",
     },
     {
-      icon: <FaPalette className="text-4xl text-cyan-400" />,
+      icon: <FaPalette className={`text-4xl ${theme === "Dark"? "text-cyan-400": "text-blue-500" } transition-all duration-[800ms] ease-in-out`} />,
       title: "Creative Design",
       description: "Unique and eye-catching visuals",
     },
     {
-      icon: <FaCode className="text-4xl text-cyan-400" />,
+      icon: <FaCode className={`text-4xl ${theme === "Dark"? "text-cyan-400": "text-blue-500" } transition-all duration-[800ms] ease-in-out`} />,
       title: "Clean Code",
       description: "Maintainable and scalable solutions",
     },
   ];
 
   return (
-    <Element id="home" className="relative overflow-hidden pt-20">
+    <Element id="home" className={`relative overflow-hidden pt-20 ${theme === "Dark" ? "bg-[#121212] " : "bg-white"}  transition-all duration-[800ms] ease-in-out `}>
       {/* Animated background elements */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-20 left-20 w-72 h-72 bg-cyan-500/20 rounded-full filter blur-3xl animate-pulse"></div>
@@ -33,7 +37,7 @@ const Hero = () => {
 
       <div className="relative z-10 px-4 sm:px-6 lg:px-8 py-20 max-w-7xl mx-auto">
         <div className="text-center space-y-8 mb-16">
-          <h1 className="text-[44px] sm:text-5xl md:text-7xl font-extrabold text-white tracking-tight leading-14 sm:leading-20">
+          <h1 className={`text-[44px] sm:text-5xl md:text-7xl font-extrabold  tracking-tight leading-14 sm:leading-20 ${theme === "Dark" ? "text-white " : "text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-indigo-500"}  transition-all duration-[800ms] ease-in-out`}>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
               Affordable
             </span>{" "}
@@ -43,7 +47,7 @@ const Hero = () => {
             </span>{" "}
             Quality
           </h1>
-          <p className="sm:max-w-[80%] mx-auto text-xl text-gray-300">
+          <p className={`sm:max-w-[80%] mx-auto text-xl ${theme === "Dark" ? "text-gray-300" : "text-gray-700"}  transition-all duration-[800ms] ease-in-out`}>
             Transform your online presence with stunning, high-performance
             websites that don't break the bank. Stand out from the crowd with
             our expert web solutions.
@@ -63,14 +67,15 @@ const Hero = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-gray-800/50 backdrop-blur-lg rounded-xl p-8 hover:transform hover:-translate-y-2 transition-all duration-300 border border-gray-700/50"
+              className={` backdrop-blur-lg rounded-xl p-8 hover:transform hover:-translate-y-2 transition-all duration-300  ${theme === "Dark" ? "bg-gray-800/50 border border-gray-700/50" : "bg-blue-100 border-blue-700/30 border"} transition-all duration-[800ms] ease-in-out
+`}
             >
               <div className="flex flex-col items-center text-center space-y-4">
                 {feature.icon}
-                <h3 className="text-xl font-bold text-white">
+                <h3 className={`text-xl font-bold  ${theme === "Dark" ? "text-white" : "text-blue-500"} transition-all duration-[800ms] ease-in-out`}>
                   {feature.title}
                 </h3>
-                <p className="text-gray-400">{feature.description}</p>
+                <p className={`${theme === "Dark" ? "text-gray-400" : "text-blue-400"} transition-all duration-[800ms] ease-in-out`}>{feature.description}</p>
               </div>
             </div>
           ))}

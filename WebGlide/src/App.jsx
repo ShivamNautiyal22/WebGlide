@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Loading from "./components/Loading";
 import FAQ from "./components/FAQ";
+import { ThemeProvider } from "./components/Theme";
 
 const App = () => {
 
@@ -28,7 +29,7 @@ const App = () => {
   }
 
   return (
-    <>
+    <ThemeProvider>
       <Router>
         <Routes>
           <Route
@@ -57,7 +58,7 @@ const App = () => {
           />
         </Routes>
       </Router>
-    </>
+    </ThemeProvider>
   );
 };
 
